@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+}
+main {
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    max-width: 1000px;
+    min-height: 30%;
+    max-height: 50%;
+    border-radius: 10px;
+    margin: 5%;
+}
+.left {
+    min-width: 55%;
+    /* padding: 4rem;
+    padding-right: 6rem; */
+    padding: 6%;
+    padding-right: 10%;
+}
+.container {
+    padding-right: 4rem;
+    vertical-align: bottom;
+}
+h1 {
+    font-size: 34px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+h2 {
+    margin-bottom: 8px;
+}
+p {
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 1.75;
+}
+.decoration {
+    color: hsl(277, 64%, 61%); 
+}
+.stats {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+span p {
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+span h2 {
+    color: hsl(0, 0%, 100%);
+}
+.right {
+    min-width: 45%;
+    background-color: #9d00ff;
+    border-radius: 10px;
+}
+.banner {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    opacity: 0.7;
+    filter: brightness(60%);
+}
+.phone {
+    width: 100%;
+    background-color: #9d00ff;
+    border-radius: 10px 10px 0 0;
+}
+.phone_img {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 10px 10px 0 0;
+    opacity: 0.7;
+    filter: brightness(60%);
+    display: block;
+}
+
+@media only screen and (max-width: 699px) {
+    main {
+        display: block;
+        text-align: center;
+        width: 345px;
+    }   
+    .right {
+        display: none;
+        width: 0%;
+    }
+    .left {
+        padding: 0;
+        max-width: 100%;
+        margin: 1.75rem;
+    }
+    .container{
+        padding: 0;
+    }
+    h1 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 16px;
+        margin-bottom: 3rem;
+    }
+    .stats {
+        display: block;
+        margin-top: 2rem;
+    }
+    span p {
+        margin-bottom: 24px;
+    }
+    
+}
